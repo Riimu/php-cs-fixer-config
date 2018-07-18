@@ -9,6 +9,8 @@ These standards are based on the community's best practices and PSR standards in
 consider good taste. You may freely use this configuration if you want, but do note that it may change and evolve
 as time passes since I reserve the right to change my mind.
 
+[![Travis](https://img.shields.io/travis/Riimu/php-cs-fixer-config.svg?style=flat-square)](https://travis-ci.org/Riimu/php-cs-fixer-config)
+
 ## Usage ##
 
 To add these rules into your project, you should first include them via composer as dev dependency using
