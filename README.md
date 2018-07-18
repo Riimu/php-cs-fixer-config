@@ -10,6 +10,7 @@ consider good taste. You may freely use this configuration if you want, but do n
 as time passes since I reserve the right to change my mind.
 
 [![Travis](https://img.shields.io/travis/Riimu/php-cs-fixer-config.svg?style=flat-square)](https://travis-ci.org/Riimu/php-cs-fixer-config)
+[![Packagist](https://img.shields.io/packagist/v/riimu/php-cs-fixer-config.svg?style=flat-square)](https://packagist.org/packages/riimu/php-cs-fixer-config)
 
 ## Usage ##
 
