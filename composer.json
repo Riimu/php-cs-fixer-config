@@ -1,0 +1,28 @@
+{
+  "name": "riimu/php-cs-fixer-config",
+  "type": "library",
+  "description": "Ready to use and highly opinionated php cs fixer config based on my and community standards",
+  "keywords": [
+    "style",
+    "php-cs-fixer"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Riikka Kalliomäki",
+      "email": "riikka.kalliomaki@gmail.com",
+      "homepage": "http://riimu.net"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.12.2"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Riimu\\PhpCsFixerConfig\\": "src/"
+    }
+  }
+}
