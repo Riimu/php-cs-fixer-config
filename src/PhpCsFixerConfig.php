@@ -22,6 +22,8 @@ class PhpCsFixerConfig
 
         $config = Config::create();
         $config
+            ->setUsingCache(false)
+            ->setRiskyAllowed(true)
             ->setRules($this->getRules())
             ->setFinder($this->getFinder());
 
