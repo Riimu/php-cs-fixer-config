@@ -1,13 +1,13 @@
-# Riimu's PHP Coding Standards Fixer Config  #
+# Riimu's PHP Coding Standards Fixer Config #
 
 Most of my projects use a very consistent set of coding standards rules and project hierarchy. Rather than
-copying the same `.php_cs` file across different projects and then trying to figure out which project had
-the latest copy, I've created this composer package as a way to include the same set of rules into every
-project via composer.
+copying the same [PHP Coding Standards Fixer] config file `.php_cs` file across different projects and then
+trying to figure out which project had the latest copy, I've created this composer package as a way to
+include the same set of rules into every project via composer.
 
-These standards are based on the community's best practices and PSR standards in addition to what I personnally
-consider good taste. You may freely use this configuration if you want, but do note that it may change and evolve
-as time passes since I reserve the right to change my mind.
+These standards are based on the community's best practices and PSR standards in addition to what I personally
+consider to be good taste. You may freely use this configuration if you want, but do note that it may change
+and evolve as time passes since I reserve the right to change my mind.
 
 [![Travis](https://img.shields.io/travis/Riimu/php-cs-fixer-config.svg?style=flat-square)](https://travis-ci.org/Riimu/php-cs-fixer-config)
 [![Packagist](https://img.shields.io/packagist/v/riimu/php-cs-fixer-config.svg?style=flat-square)](https://packagist.org/packages/riimu/php-cs-fixer-config)
@@ -40,3 +40,5 @@ $ php-cs-fixer fix --dry-run -v --diff --diff-format=udiff
 This package is Copyright (c) 2018 Riikka Kalliomäki.
 
 See LICENSE for license and copying information.
+
+[PHP Coding Standards Fixer]: https://github.com/FriendsOfPHP/PHP-CS-Fixer
