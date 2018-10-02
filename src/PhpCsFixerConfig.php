@@ -33,7 +33,7 @@ class PhpCsFixerConfig
     private function detectRootDirectory(): string
     {
         foreach (debug_backtrace(\DEBUG_BACKTRACE_IGNORE_ARGS) as $trace) {
-            $file = $trace['file'] ?? '';
+            $file = (string) ($trace['file'] ?? '');
 
             if (basename($file) === '.php_cs') {
                 return \dirname($file);
@@ -70,21 +70,26 @@ class PhpCsFixerConfig
             'class_attributes_separation' => ['elements' => ['method']],
             'combine_consecutive_issets' => true,
             'combine_consecutive_unsets' => true,
+            'combine_nested_dirname' => true,
+            'compact_nullable_typehint' => true,
             'concat_space' => ['spacing' => 'one'],
             'declare_equal_normalize' => true,
             'dir_constant' => true,
             'ereg_to_preg' => true,
+            'fopen_flag_order' => true,
+            'fopen_flags' => true,
             'fully_qualified_strict_types' => true,
             'function_to_constant' => true,
             'function_typehint_space' => true,
             'heredoc_to_nowdoc' => true,
+            'implode_call' => true,
             'include' => true,
-            'is_null' => true,
             'list_syntax' => ['syntax' => 'short'],
             'logical_operators' => true,
             'lowercase_cast' => true,
             'lowercase_static_reference' => true,
             'magic_constant_casing' => true,
+            'magic_method_casing' => true,
             'modernize_types_casting' => true,
             'multiline_comment_opening_closing' => true,
             'multiline_whitespace_before_semicolons' => true,
@@ -127,11 +132,13 @@ class PhpCsFixerConfig
             'php_unit_construct' => true,
             'php_unit_dedicate_assert' => ['target' => 'newest'],
             'php_unit_expectation' => true,
+            'php_unit_method_casing' => true,
             'php_unit_mock' => true,
             'php_unit_namespaced' => true,
             'php_unit_no_expectation_annotation' => true,
             'php_unit_set_up_tear_down_visibility' => true,
             'php_unit_strict' => true,
+            'php_unit_test_annotation' => true,
             'php_unit_test_case_static_method_calls' => ['call_type' => 'this'],
             'phpdoc_add_missing_param_annotation' => true,
             'phpdoc_align' => ['align' => 'left'],
@@ -167,6 +174,7 @@ class PhpCsFixerConfig
             'standardize_not_equals' => true,
             'strict_comparison' => true,
             'strict_param' => true,
+            'string_line_ending' => true,
             'ternary_operator_spaces' => true,
             'ternary_to_null_coalescing' => true,
             'trailing_comma_in_multiline_array' => true,
